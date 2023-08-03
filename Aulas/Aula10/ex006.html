@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM</title>
+
+    <style>
+        div#area {
+            font: normal 15px 'Arial';
+            background-color: green;
+            color: white;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            border-radius: 20%;
+        }
+    </style>
+
+    </head>
+
+    
+
+    <body>
+        <!--Tem como fazer dentro do div-->
+        <div id="area" onclick="clicar()" onmouseenter="emcima()">
+            Interaja
+        </div>
+    </body>
+
+    <script>
+        var area = window.document.getElementById("area")
+
+        //Ou no script
+        area.addEventListener('mouseout', fora)
+
+        function clicar() {
+            area.innerText = 'Clicou!'
+            area.style.background = 'red'
+        }
+        function emcima() {
+            area.innerText = 'Entrou!'
+        }
+        function fora() {
+            area.innerText = 'Saiu!'
+            area.style.background = 'green'
+        }
+    </script>
+
+</html>

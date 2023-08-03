@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa!</title>
+</head>
+    <style> 
+    body {
+        background-color: rgb(62, 93, 230);
+        color: white;
+        font: normal 20pt Arial;
+    }
+
+    </style>
+<body>
+        <h1>Ola, Mundo!</h1>
+</body>
+    <script>
+
+        var n1 = Number(window.prompt("Digite um numero:"))
+        var n2 = Number(window.prompt("Digite outro numero:"))
+
+        //Number.parseInt() -> converte para numero inteiro
+        //Number.parseFloat() -> converte para numero real
+        //Number() -> o JS analisa se e para int ou float
+
+        //String(n) -> converte um valor para String 
+        //n.toString() -> outra forma de converter 
+
+        //number + number -> adicao
+        //string + string -> concatenacao
+
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é ${s}`) //Formatacao com crase!
+
+    </script>
+</html>

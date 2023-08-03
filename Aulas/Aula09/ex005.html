@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <style>
+        body {
+            background-color: rgba(184, 108, 255, 0.582);
+            color: rgb(255, 255, 255);
+            font: normal 18pt Arial;
+        }
+        
+    </style>
+
+    <body>
+        <h1>Iniciando estudos com DOM!</h1>
+        <p class='resultado'>Aqui vai o resultado.</p>
+        <p>Apresentando a usar <Strong>DOM</Strong> em Javascript.</p>
+        <div id="msg">Clique em mim!</div>
+        <div name='nome'>Eu amo Cuca!</div>
+        <div id='deus'>Jesus</div>
+    </body>
+
+    <script>
+
+        // Usando os conceitos de selecao de DOM 
+
+        //getElementsByTagName
+        var p1 = document.getElementsByTagName('p')[0]
+        document.write(p1.innerText)
+        p1.style.color = 'red'
+
+        //getElementsById
+        var msg = document.getElementById("msg")
+        msg.style.color = 'black'
+
+        //getElementsByName 
+        var nome = document.getElementsByName('nome')[0]
+        nome.innerHTML = '<h1>Oi</h1>'
+
+        //getElementsByClass
+        var texto = document.getElementsByClassName('resultado')[0]
+        texto.style.background = 'blue'
+
+        //querySelector
+        var amem = document.querySelector("div#deus")
+        amem.style.background = 'green'
+
+    </script>
+
+</html>

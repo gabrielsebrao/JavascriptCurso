@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DETRAN</title>
+    </head>
+
+    <body>
+        <h1>Sistema de Multas</h1>
+        Velocidade do carro: <input type="number" id="velocidade"> Km/h
+        <input type="button" value="Verificar" onclick="verify()" id="botao">
+        <div id="res"></div>
+    </body>
+
+    <script>
+        function verify() {
+            var numtxt = window.document.getElementById("velocidade")
+            var num = Number(numtxt.value)
+            var result = window.document.getElementById('res')
+            result.innerHTML = `<p>A velocidade do seu carro é <strong>${num} Km/h.</strong></p>`
+            if (num > 60) {
+                result.innerHTML += '<p>Voce ultrapassou a velocidade permitida. <strong>MULTADO!</strong><p>'
+            }
+            result.innerHTML += `Dirija sempre com cinto de segurança!</p>`
+        }
+    </script>
+</html>
