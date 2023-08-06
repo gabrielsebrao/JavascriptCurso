@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Verificador de Idade</title>
         <link rel="stylesheet" href="style.css">
     </head>
 
@@ -15,20 +15,22 @@
             <div>
                 <p>Ano de Nascimento: </p>
                 <input type="number" name="" id="birthYear">
-                    <p>Sexo: <input type="radio" name="radiosex" id="masc" checked>
+                    <p>Sexo: <input type="radio" name="radsex" id="masc" checked>
                     <label for="masc">Masculino</label>
-                    <input type="radio" name="" id="fem">
+                    <input type="radio" name="radsex" id="fem">
                     <label for="fem">Feminino</label>
                 </p>
                 
             </div>
-            <input type="button" value="Verificar" onclick="verificar()">
-            <div>
-                
+                <p>
+                    <input type="button" value="Verificar" onclick="verificar()">
+                </p>
+            <div id="resultado">
+                Preencha os dados acima para ver o resultado!
             </div>
         </section>
         <footer>
-            <p>&copy; Gabriel de Oliveira Sebrao</p>
+            <p>&copy;GabrielSebrao</p>
         </footer>
     </body>
     <script src="script.js"></script>
